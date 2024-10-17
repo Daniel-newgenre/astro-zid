@@ -1,19 +1,11 @@
----
-import { getRelativeLocaleUrl } from "astro:i18n";
-import Layout from "@/layouts/Layout.astro";
-import { getLocaleByPath } from "astro:i18n";
-import { CONTENT } from "@/config";
 
-import Component from "@/components/Component.astro";
+------------------------------------------------------------------
+/**
+ * This file is the root index page for the project.
+ * Since we are using i18n with "prefixDefaultLocale", 
+ * this page will never be directly visited as the default locale 
+ * is automatically prefixed to the URL. 
+ * Therefore, this page is redundant and can be safely ignored.
+ */
+------------------------------------------------------------------
 
-const homeUrl = getRelativeLocaleUrl("en", "/");
-
-const path = Astro.url.pathname;
-const locale = path.includes("ar");
----
-
-<Layout title="Welcome to Astro.">
-  <main class="h-screen">
-    Testing
-  </main>
-</Layout>
