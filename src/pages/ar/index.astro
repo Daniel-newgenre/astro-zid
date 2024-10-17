@@ -1,0 +1,25 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import Layout from "@/layouts/Layout.astro";
+import { getLocaleByPath } from "astro:i18n";
+import { CONTENT } from "@/config";
+
+import Component from "@/components/Component.astro";
+
+const homeUrl = getRelativeLocaleUrl("en", "/");
+
+const path = Astro.url.pathname;
+const locale = path.includes('ar')
+
+
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="h-screen">
+    <div class="max-w-[1140px] mx-auto">
+      <h1>مرحباً بكم في الإمارات</h1>
+      <a href={homeUrl}>UK</a>
+      <Component />
+    </div>
+  </main>
+</Layout>

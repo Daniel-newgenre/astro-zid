@@ -1,8 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
+    --white: 0 0% 100%;
+    --neutral: 270 10% 96.1%;
+    --silver: 274 14.9% 90.8%;
+    --dark: 274 85.5% 10.8%;
+    --lavender: 266 100% 72.4%;
+    --dark-lavender: 274 50% 22%;
+    --desert: 25, 100%, 61%;
+    --leather: 24.6 50% 22%;
+    --sky: 180 68.2% 65.5%;
+    --sea: 180 50% 22%;
+    --gold: 50.3 90.8% 74.5%;
+    --dates: 40.7 50% 22%;
+    --emerald: 116 68.9% 76.1%;
+    --palm: 116 50% 22%;
+    --pastel-blue: 220, 100%, 88%;
+
+
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -29,6 +47,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -56,10 +75,12 @@
     --chart-5: 340 75% 55%
   }
 }
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

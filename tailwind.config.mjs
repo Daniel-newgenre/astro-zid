@@ -10,8 +10,27 @@ export default {
     			sm: 'calc(var(--radius) - 4px)'
     		},
     		colors: {
+				// CUSTOM COLOURS
+				neutral: "hsl(var(--neutral))",
+				silver: "hsl(var(--silver))",
+				dark: "hsl(var(--dark))",
+				lavender: "hsl(var(--lavender))",
+				"dark-lavender": "hsl(var(--dark-lavender))",
+				desert: "hsl(var(--desert))",
+				leather: "hsl(var(--leather))",
+				sky: "hsl(var(--sky))",
+				sea: "hsl(var(--sea))",
+				gold: "hsl(var(--gold))",
+				dates: "hsl(var(--dates))",
+				emerald: "hsl(var(--emerald))",
+				palm: "hsl(var(--palm))",
+				"pastel-blue": "hsl(var(--pastel-blue))",
+				background: "hsl(var(--background))",
+				foreground: "hsl(var(--foreground))",
     			background: 'hsl(var(--background))',
     			foreground: 'hsl(var(--foreground))',
+
+				
     			card: {
     				DEFAULT: 'hsl(var(--card))',
     				foreground: 'hsl(var(--card-foreground))'

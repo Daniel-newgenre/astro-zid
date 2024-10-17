@@ -1,0 +1,22 @@
+---
+import { CONTENT } from "@/config";
+
+type Locale = "en" | "ar";
+
+import { getLocalePrefix } from "@/lib";
+
+const path = Astro.url.pathname;
+const lang = getLocalePrefix(path) as Locale;
+
+const { headline, subText, link } = CONTENT[lang];
+
+console.log({ headline, subText, link, lang });
+---
+
+<div>
+  <h1>{headline}</h1>
+  <p class={`text-white ${lang === "ar" ? "bg-red-500" : "bg-blue-700"}`}>
+    {subText}
+  </p>
+  <a href="/">{link}</a>
+</div>
